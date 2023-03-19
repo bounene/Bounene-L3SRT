@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Agency FB";
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url('all-anime-characters-wallpapers-wallpaper-cave.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: left top;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: rgb(6, 5, 5);
+    user-select: none;
+}
+.liens a {
+    position: relative;
+    font-size: 1.1em;
+    color: #0b0b0b;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    text-transform: uppercase;
+
+}
+.liens a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #f5f2f2;
+    position: absolute;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ;
+
+}
+.liens a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.liens .login {
+    width: 100px;
+   height: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none ;
+    border-radius: 6px;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    background-color: transparent;
+}
+.liens .login:hover{
+    background: #fff;
+    color: black;
+}
+.login1{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter:blur(5px);
+    box-shadow: 0 0 30px rgba(0,0, 0,rgba(255,255,255,.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.login1 .box{
+    width: 100%;
+    padding: 40px;
+}
+
+.login1 .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #e99d05;
+    font-size: 2em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.box h2{
+    font-size: 2em;
+    color: #e99d05;
+    text-align: center;
+}
+.input{
+    position: relative;
+    width: 100%;
+  /*  height: 10px;*/
+   border-bottom: 2px solid #162938;
+    margin: 30px 0;
+
+}
+.input label{
+    position: absolute;
+    color: #e99d05;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    
+}
+.input input:focus~label,.input input:valid~label{
+    top: -5px;
+}
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: black;
+
+}
+.input .icone {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #0b0b0b;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.sesouvenir{
+    font-size:1.1em;
+    color: #e99d05;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sesouvenir label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+.sesouvenir a{
+    color: #e99d05;
+    text-decoration: none;   
+}
+.sesouvenir a:hover{
+    text-decoration: underline;
+}
+.bouton{
+    width: 100%;
+    height: 45px;
+    background: #e99d05;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+}
+#enregistrer{
+    font-size: .9em;
+    color: #0b0b0b;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+#enregistrer p a {
+    color: #e99d05;
+    text-decoration: none;
+    font-weight: 600;
+}
+#enregistrer p a:hover{
+    text-decoration: underline;
+}
